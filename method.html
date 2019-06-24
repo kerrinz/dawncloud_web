@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/ripple.css">
+		<script src="js/jquery-3.4.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/ripple.js" charset="UTF-8"></script>
+		<style type="text/css">
+			.card{
+				width: auto;
+				/*height: 360px;*/
+				padding-bottom: 2rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+			.card-img{
+				/*width: 260px;*/
+				height: 200px;
+			}
+			.is-140x140 img{
+				/*display: block;*/
+				width: auto;
+				height: 140px;
+			}
+			.more-link{
+				visibility: hidden;
+				font-size: 0.875rem;
+				opacity: 0;
+				width: 100%;
+				/*bottom: 2.5rem;*/
+				text-align: center;
+				transition: .1s;
+			}
+			.tiltle-content{
+				color: #a1a6ab;
+			}
+			.box-show {
+				transition: .3s ease;
+				cursor: pointer;
+			}
+			.box-show:hover .tiltle-content{
+				/*visibility: hidden;*/
+			}
+			.box-show:hover .more-link{
+				opacity: 1;
+    			visibility: visible;
+    			color: #00A971;
+			}
+			.box-show:hover{
+				opacity: 1;
+    			visibility: visible;
+    			color: #218838;
+				box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.1);
+				-webkit-transform: translate(0, -1.25rem);
+				-moz-transform: translate(0, -1.25rem);
+				transform: translate(0, -1.25rem);
+			}
+		</style>
+	</head>
+<body>
+	<div id="nav" class="w-100 fixed-top">
+		<nav class="w-100 navbar navbar-expand-md navbar-dark container">
+			<!-- Brand -->
+			<a class="navbar-brand" href="index.html">
+				<img src="images/nav_logo_white.svg" />
+			</a>
+			<!-- Toggler/collapsibe Button -->
+			<button class="border-0 navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<!--<span class="navbar-toggler-icon "></span>-->
+				<i class="fas fa-bars"></i>
+			</button>
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul style="z-index: 9999" class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">首页</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="notice.html">公告</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">产品列表</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-success" href="method.html">解决方案</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="partner.html">合作伙伴</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">联系我们</a>
+					</li>
+					<div class="hide-xs">
+						<li class="nav-item w-100">
+							<a class="nav-link" href="login.html">登陆</a>
+						</li>
+						<li class="nav-item w-100">
+							<a class="nav-link" href="sign_up.html">注册</a>
+						</li>
+					</div>
+			</ul>
+			</div>
+			<ul style="font-size: 20px" class="float-right text-light m-0 p-0 show-xs">
+				<li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+					<button onclick="window.location.href='login.html'" class="btn btn-success btn-sm">
+						登入
+					</button>
+				</li>
+				<li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+					<button onclick="window.location.href='sign_up.html'" class="btn btn-success btn-sm">
+						注册
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div id="banner" class="h-banner banner0 overlay position-relative text-white">
+		<div class="h-banner w-100 position-absolute d-flex text-light justify-content-center align-items-center">
+			<div class="container">
+				<div class="text-center p-3 pl-lg-5 pr-lg-5">
+					<h2>完整的解决方案</h2>
+				</div>
+				<div class="text-center pl-2 pr-2 pl-lg-5 pr-lg-5">
+					<p>
+						针对不同的业务需求和应用场景，DawnCloud 为你提供最专业的定制化解决方案
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4 ">
+					<div class="card box-show border-0">
+						<div class="card-img">
+							<figure class="images is-140x140  pt-4 ">
+								<img src="img/shop.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">跨境电商解决方案</p>
+							<p class="pt-3 h6 tiltle-content">跨境电商需要在多个海外电商平台进行店铺运营...</p>
+							<a class="more-link" >了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4   ">
+					<div class="card box-show border-0">
+						<div class="card-img">
+							<figure class="images is-140x140 pt-4">
+								<img src="img/live.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">直播互动答题</p>
+							<p class="pt-3 h6 tiltle-content">助力各平台构筑直播互动答题解决方案</p>
+							<a class="more-link" href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/hybird-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">混云台</p>
+							<p class="pt-3 h6 tiltle-content">基于公有云和私有云一致的云平台实现技术，DawnCloud 提供...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/managed-cloud-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">托管云</p>
+							<p class="pt-3 h6 tiltle-content">DawnCloud 托管云方案致力于为用户提供一站式、高可用、高...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0 ">
+						<div class="card-img">
+							<figure class="images is-140x140  pt-4 ">
+								<img src="img/mz.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">多话</p>
+							<p class="pt-3 h6 tiltle-content">利用青云DawnCloud 提供的服务构建高可用多活架构，保证…</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/dr-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">灾备</p>
+							<p class="pt-3 h6 tiltle-content">无论是公有云上的应用系统，还是企业已运行的应用系统，都...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/bigdata-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">大数据</p>
+							<p class="pt-3 h6 tiltle-content">DawnCloud 大数据解决方案提供主流的大数据组件，与云平台...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/storage-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center center">存储</p>
+							<p class="pt-3 h6 tiltle-content">DawnCloud 针对业务系统对存储的多维需求，提供多种安全可...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0 ">
+						<div class="card-img">
+							<figure class="images is-140x140  pt-4 ">
+								<img src="img/p2p-finance-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">互联网金融</p>
+							<p class="pt-3 h6 tiltle-content">为各种规模的互联网金融企业打造弹性、高可用、运维便捷...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/banking-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">银行业</p>
+							<p class="pt-3 h6 tiltle-content">DawnCloud 长期关注银行业的科技发展趋势，为银行客户提...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/insurance-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">保险业</p>
+							<p class="pt-3 h6 tiltle-content">随着保险业从封闭架构向互联网架构的转移，分布式架构、软...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12  pt-2 pt-md-4  ">
+					<div class="card box-show border-0">
+						<div class="card-img ">
+							<figure class="images is-140x140  pt-4">
+								<img src="img/bond-1.png"/>
+							</figure>
+						</div>
+						<div class="card-content ">
+							<p class="h5 text-center">证券业</p>
+							<p class="pt-3 h6 tiltle-content">基于证券行业安全可靠性要求高、业务波动大、网络要求高...</p>
+							<a class="more-link"   href="#">了解详情 →</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<div class="footer mt-4 text-light d-flex align-items-center">
+		<div class="foottop container text-center small">
+			<div class="text-center ">
+				<div class="text-center float-left pt-3 pl-3">
+					<a href="index.html" class="logo1 m-auto">
+					</a>
+				</div>
+				<div class="float-right pb-3 pr-3">
+					<dl>
+						<dt>400-2333-666</dt>
+						<dd>工作时间：周一至周五(9:00~18:00)</dd>
+						<dd>电子邮箱：dawncloud@dawncloud.com</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="foot_copyright pt-3 pb-3">
+				<div class="text-center d-inline-block">
+					<a class="text-anti-light">版权所有 © DawnCloud 2019</a>
+					<a class="text-anti-light" href="index.html">DawnCloud计算机服务商</a>
+					<a class="text-anti-light" href="http://www.miitbeian.gov.cn/">京ICP备23336666号</a>
+				</div>
+				<br>
+				<div class="text-center d-inline-block">
+					<a class="text-anti-light" href="#">公司介绍</a>
+					<a class="text-anti-light" href="contact.html">联系方式</a>
+					<a class="text-anti-light" href="#">人才招聘</a>
+					<a class="text-anti-light" href="#">百度百科</a>
+					<a class="text-anti-light" href="#">百度口碑</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--回到顶部-->
+	<div style="z-index: 9999;" class="barside d-block">
+		<a onclick="scrollToTop()" title="回到顶部" class="bds_top top" ></a>
+	</div>
+</body>
+</html>
+<script>
+	jQuery(document).ready(function ($) {
+		$(".box-show").on("click",function (e) {
+			window.location.href="details.html";
+		})
+	})
+</script>
+<script>
+	jQuery(document).ready(function ($) {
+		//开场执行一次
+		checkNavStatus();
+		//监听滚动距离
+		window.addEventListener("scroll", function(event) {
+			checkNavStatus();
+		});
+		//根据当前所处的页面高度检查状态栏
+		function checkNavStatus() {
+			var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+			var h_banner = $(".banner0").height() - $("#nav").height();
+			if(scrollTop > h_banner){
+				swichToDark()
+			}else {
+				swichToLight()
+			}
+			if (scrollTop > 10) {
+				$(".barside .top").show();
+			}else {
+				$(".barside .top").hide();
+			}
+		}
+		//切换状态栏背景为亮色
+		function swichToLight() {
+			$("#nav").css("background","transparent");
+			$(".navbar-brand img").attr("src","images/nav_logo_white.svg");
+			$("#nav nav").addClass("navbar-dark");
+			$("#nav nav").removeClass("navbar-light");
+		}
+		//切换状态栏背景为暗色(透明)
+		function swichToDark() {
+			$("#nav").css("background","#f0f3f9");
+			$(".navbar-brand img").attr("src","images/nav_logo_black.svg");
+			$("#nav nav").removeClass("navbar-dark");
+			$("#nav nav").addClass("navbar-light");
+		}
+	});
+	//滚动到顶部
+	function scrollToTop() {
+		$('html,body').animate({scrollTop:0},1000);
+	}
+</script>

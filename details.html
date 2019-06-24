@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>跨境电商解决方案</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/onlyIndex.css">-->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <style type="text/css">
+
+        .container-fluid-bg {
+            background: #f5f9fa;
+            background-position: top;
+        }
+        .is-64x64{
+            width: 64px;
+            height: 64px;
+            margin-right: 20px;
+        }
+        .img-thumbnail-bg {
+            background: #f5f9fa;
+        }
+
+        .container-s {
+            color: #FFFFFF;
+        }
+
+        .container-bg {
+            background-color: #FFFFFF;
+        }
+
+        .function-content {
+            border-bottom: 1px solid #CCCCCC;
+        }
+
+        .function-content ul > li::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            left: 10px;
+            top: 63px;
+            border-radius: 50%;
+            background: #00A971;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="nav" class="w-100 fixed-top">
+    <nav class="w-100 navbar navbar-expand-md navbar-dark container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/nav_logo_white.svg" />
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="border-0 navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!--<span class="navbar-toggler-icon "></span>-->
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul style="z-index: 9999" class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notice.html">公告</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">产品列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="method.html">解决方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="partner.html">合作伙伴</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">联系我们</a>
+                </li>
+                <div class="hide-xs">
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="login.html">登陆</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="sign_up.html">注册</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <ul style="font-size: 20px" class="float-right text-light m-0 p-0 show-xs">
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='login.html'" class="btn btn-success btn-sm">
+                    登入
+                </button>
+            </li>
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='sign_up.html'" class="btn btn-success btn-sm">
+                    注册
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="banner" class="h-banner  overlay position-relative text-white">
+    <div class="h-banner banner1 w-100 position-absolute d-flex text-light justify-content-center align-items-center">
+        <div class="container">
+            <div class="text-center p-3 pl-lg-5 pr-lg-5">
+                <h2>跨境电商解决方案</h2>
+            </div>
+            <div class="text-center pl-2 pr-2 pl-lg-5 pr-lg-5">
+                <p>
+                    DawnCloud 可以为跨境电商提供安全、便捷、弹性的店铺运营解决方案，帮助跨境电商从容面对业务高峰、安全威胁，实现多平台、多店铺、多人员管理运营。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-bg">
+    <div class="container ">
+        <div class="title pt-5 text-center">
+            <h2>跨境电商业务痛点</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 pt-4 ">
+                <div class="">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/coin.png"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>海外专线价格昂贵</h6>
+                            <p>传统海外专线方案不但价格昂贵，施工周期也非常长，无法满足电商平台的高速发展。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  pt-4">
+                <div class="">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/danger-sing.png"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>跨境电商多账号关联风险</h6>
+                            <p>跨境电商普遍面临复杂的多平台运营问题与多账号关联风险。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  pt-4">
+                <div class="">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/laptop.png"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>硬件资源浪费</h6>
+                            <p>随着业务量逐渐增大，跨境电商运营需要投入大量硬件资源，不仅造成严重的资源浪费，也大大增加运维成本。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  pt-4">
+                <div class="">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/users.png"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>多人同时运营管理</h6>
+                            <p>跨境电商店铺需要销售、客服、市场、运营、推广等人员同时参与运营工作，需支持多人同时登陆平台，进行管理运营。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  pt-4">
+                <div class="">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/timer@2x.png"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>浏览器多开账号</h6>
+                            <p>DawnCloud 重新编译Chorme浏览器，实现浏览器间 Cookie 等资源隔离，实现单主机多电商平台运营。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  pt-4">
+                <div class="">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/cable-break.png"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>跨境网络受限</h6>
+                            <p>跨境电商需要在 Amazon、Shopee、eBay 等海外电商平台进行店铺运营工作，但受限于网络条件，从国内访问速度十分缓慢，对工作造成极大影响。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-fluid-bg">
+    <div class="container">
+        <div class="title text-center pt-5">
+            <h3>跨境电商解决方案部署架构</h3>
+        </div>
+        <div class="image pt-5">
+            <img src="img/架构图.png"
+                 class="img-thumbnail img-thumbnail-bg border-0"/>
+        </div>
+
+        <div class="title text-center pt-5">
+            <h3>方案特性</h3>
+        </div>
+        <div class="columns pt-5">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h3>安全稳定</h2>
+                </div>
+                <div class="col-lg-10 function-content pt-5 pb-5">
+                    <ul>
+                        <li>DawnCloud 提供支持网络二层隔离的高性能云主机以及纯净 IP 资源，有效避免跨境电商多账号关联风险。</li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 ">
+                    <h3>网络加速</h2>
+                </div>
+                <div class="col-lg-10 function-content pt-5 pb-5">
+                    <ul>
+                        <li>DawnCloud 提供高质量国内网络连接能力，通过 N*10GE 级别带宽直通 ChinaNet、China 169 骨干网，突破网络瓶颈，为跨境电商提供高速稳定的出口带宽。
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 ">
+                    <h3>访问体验优化</h2>
+                </div>
+                <div class="col-lg-10 function-content pt-5 pb-5">
+                    <ul>
+                        <li>
+                            <p>多地办公区接入</p>
+                            通过 DawnCloud SD-WAN 连接亚太区，实现本地-海外运营推广一体化。
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>为跨境业务而生，释放极致性能</p>
+                            许多跨境电商存在多个办公地点，通过 DawnCloud SD-WAN 可以摆脱跨境电商多地办公网、国内外混合访问困扰。
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 ">
+                    <h3>弹性带宽</h2>
+                </div>
+                <div class="col-lg-10 function-content pt-5 pb-5">
+                    <ul>
+                        <li>
+                            DawnCloud 弹性公网 EIP 支持灵活的计费策略，可按流量计费或按带宽计费。同时您还可以通过自动伸缩的功能，根据实际业务流量动态调整带宽阈值，实现成本的有效优化。
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 ">
+                    <h3>多人运营</h2>
+                </div>
+                <div class="col-lg-10 function-content pt-5 pb-5">
+                    <ul>
+                        <li>
+                            跨境电商店铺需要销售、客服、市场运营、推广人员多人同时参与运营工作，DawnCloud 实现云账号机多人同时登陆，同时进行跨境电商运营工作；
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-2 ">
+                    <h3>管理便捷</h2>
+                </div>
+                <div class="col-lg-10 function-content pt-5 pb-5">
+                    <ul>
+                        <li>
+                            跨境电商专用管理系统具有完善的后台管理功能、完善的权限分配机制和账号机权限管理，实现多店铺管理及账号安全机制。
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-fluid-bg">
+    <div class="container">
+        <div class="title text-center pt-5">
+            <h2>精选客户</h2>
+        </div>
+        <div class="row cases-content text-center">
+            <div class="image col-lg-4 pt-5 ">
+                <img src="img/yks.jpg " class="img-thumbnail"/>
+            </div>
+            <div class="image col-lg-4 pt-5">
+                <img src="img/zibuyu.png" class="img-thumbnail"/>
+            </div>
+            <div class="image col-lg-4 pt-5">
+                <img src="img/zhiyuan.png" class="img-thumbnail"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="footer mt-4 text-light d-flex align-items-center">
+    <div class="foottop container text-center small">
+        <div class="text-center ">
+            <div class="text-center float-left pt-3 pl-3">
+                <a href="index.html" class="logo1 m-auto">
+                </a>
+            </div>
+            <div class="float-right pb-3 pr-3">
+                <dl>
+                    <dt>400-2333-666</dt>
+                    <dd>工作时间：周一至周五(9:00~18:00)</dd>
+                    <dd>电子邮箱：dawncloud@dawncloud.com</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="foot_copyright pt-3 pb-3">
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light">版权所有 © DawnCloud 2019</a>
+                <a class="text-anti-light" href="index.html">DawnCloud计算机服务商</a>
+                <a class="text-anti-light" href="http://www.miitbeian.gov.cn/">京ICP备23336666号</a>
+            </div>
+            <br>
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light" href="#">公司介绍</a>
+                <a class="text-anti-light" href="contact.html">联系方式</a>
+                <a class="text-anti-light" href="#">人才招聘</a>
+                <a class="text-anti-light" href="#">百度百科</a>
+                <a class="text-anti-light" href="#">百度口碑</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回到顶部-->
+<div style="z-index: 9999;" class="barside d-block">
+    <a onclick="scrollToTop()" title="回到顶部" class="bds_top top" ></a>
+</div>
+</body>
+
+</html>

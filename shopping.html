@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/onlyIndex.css">-->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+</head>
+<style type="text/css">
+    .h-banner {
+        height: 200px;
+    }
+</style>
+<body>
+<div id="nav" class="w-100 fixed-top">
+    <nav class="w-100 navbar navbar-expand-md navbar-dark container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/nav_logo_white.svg"/>
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="border-0 navbar-toggler text-success" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+            <!--<span class="navbar-toggler-icon "></span>-->
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul style="z-index: 9999" class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notice.html">公告</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">产品列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="method.html">解决方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="partner.html">合作伙伴</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">联系我们</a>
+                </li>
+                <div class="hide-xs">
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="login.html">登陆</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="sign_up.html">注册</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <ul style="font-size: 20px" class="float-right text-light m-0 p-0 show-xs">
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='login.html'" class="btn btn-success btn-sm">
+                    登入
+                </button>
+            </li>
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='sign_up.html'" class="btn btn-success btn-sm">
+                    注册
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="banner" class="h-banner position-relative text-white">
+    <div class="h-banner banner1 w-100 position-absolute d-flex text-light justify-content-center align-items-center">
+        <div class="container">
+            <div class="text-center p-3 pl-lg-5 pr-lg-5">
+                <h2>购物车</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pt-3 mb-4 mb-lg-5">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 fold" id="accordion">
+            <div class="fold-panel">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#">
+                        <i class="fa fa-history pr-2"></i>浏览历史
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show">
+                    <ul class="">
+                        <li class="vps">
+                            香港HKT NAT - 0.5G
+                        </li>
+                        <li class="vps">
+                            新加坡BGP - 1024M
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fold-panel">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#">
+                        操作
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse show">
+                    <div class="">
+                        <ul class="">
+                            <li onclick="window.location.href='products.html'">
+                                浏览其他产品
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fold-panel">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#">
+                        选择货币
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse show">
+                    <div class="">
+                        <ul class="">
+                            <li>
+                                CNY
+                            </li>
+                            <li>
+                                USD
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-6 col-xl-6 pt-3">
+            <div class="container">
+                <div class="text-muted ">
+                    <h4>配置</h4>
+                    <p class="p-2">配置您需要的选项并结账。</p>
+                </div>
+            </div>
+            <div class="card">
+                <h4 class="text-center text-info card-title m-3"><b>香港HKT NAT - 0.5G</b></h4>
+                <div class="container text-muted">
+                    <p class="card-text">X5650 * 1 vCore</p>
+                    <p>内存 512M</p>
+                    <p>SWAP 1024M</p>
+                    <p>HDD 10G</p>
+                    <p>流量 600G (Out)</p>
+                    <p>带宽 100Mbps</p>
+                    <p>共享动态IPv4 *1 10端口</p>
+                    <p>独立IPv6 *1</p>
+                    <p>提供DDNS更新</p>
+                    <p>特殊情况秒级自动更换IP</p>
+                    <p class="pt-3 pb-3 text-colorAccent">注：年付免初装费</p>
+                </div>
+            </div>
+            <div class="pt-3 pb-3 w-100">
+                <p class="text-muted">付款周期</p>
+                <div class="pt-1 pb-1 w-100">
+                    <select style="font-size: 16px" class="w-100 text-colorAccent form-control w-auto float-left">
+                        <option>
+                            ￥50.00 CNY 月付 + ￥100.00 CNY 初装费
+                        </option>
+                        <option>
+                            ￥135.00 CNY 季度 + ￥100.00 CNY 初装费
+                        </option>
+                        <option>
+                            ￥260.00 CNY 半年 + ￥100.00 CNY 初装费
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="w-100 d-inline-block pt-4 pb-3">
+                <p style="border-bottom: rgb(204,204,204) 1px solid" class="text-secondary large">服务器设置</p>
+            </div>
+            <form class="row">
+                <div class="input-group mb-3">
+                    <div class="col-12 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="text-black-50">主机名</span>
+                        </div>
+                        <input type="text" class="form-control" readonly="readonly" placeholder="CubeCloud-2019619376">
+                    </div>
+                    <div class="col-12 col-md-6 pt-2">
+                        <div class="input-group-prepend">
+                            <span class="text-black-50">root密码</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="输入密码">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 pt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center card-title text-info">订购总额</h4>
+                    <p class="card-text text-muted"><b>香港HKT NAT - 0.5G</b></p>
+                    <p class="font-italic small font-weight-light text-muted">HK|香港B区 NAT VZ-Mini V5</p>
+                    <br>
+                    <hr>
+                    <div class="small text-secondary">
+                        <p class="d-inline-block w-100">
+                            <span class="text-muted float-left">香港HKT NAT - 0.5G</span>
+                            <span class="text-muted float-right">￥50.00 CNY</span>
+                        </p>
+                        <p class="d-inline-block w-100">
+                            <span class="card-text float-left">初装费:</span>
+                            <span class="card-text float-right">￥100.00 CNY</span>
+                        </p>
+                        <p class="d-inline-block w-100">
+                            <span class="card-text float-left">月付:</span>
+                            <span class="card-text float-right">￥50.00 CNY</span>
+                        </p>
+                    </div>
+                    <hr/>
+                    <p class="h3 text-right">￥150.00 CNY</p>
+                    <p class="text-right">当前总计</p>
+                </div>
+            </div>
+            <div class="text-center p-4">
+                <button class="radio-px btn-block btn-lg btn-success">继续</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer mt-4 text-light d-flex align-items-center">
+    <div class="foottop container text-center small">
+        <div class="text-center ">
+            <div class="text-center float-left pt-3 pl-3">
+                <a href="index.html" class="logo1 m-auto">
+                </a>
+            </div>
+            <div class="float-right pb-3 pr-3">
+                <dl>
+                    <dt>400-2333-666</dt>
+                    <dd>工作时间：周一至周五(9:00~18:00)</dd>
+                    <dd>电子邮箱：dawncloud@dawncloud.com</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="foot_copyright pt-3 pb-3">
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light">版权所有 © DawnCloud 2019</a>
+                <a class="text-anti-light" href="index.html">DawnCloud计算机服务商</a>
+                <a class="text-anti-light" href="http://www.miitbeian.gov.cn/">京ICP备23336666号</a>
+            </div>
+            <br>
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light" href="#">公司介绍</a>
+                <a class="text-anti-light" href="contact.html">联系方式</a>
+                <a class="text-anti-light" href="#">人才招聘</a>
+                <a class="text-anti-light" href="#">百度百科</a>
+                <a class="text-anti-light" href="#">百度口碑</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回到顶部-->
+<div style="z-index: 9999;" class="barside d-block">
+    <a onclick="scrollToTop()" title="回到顶部" class="bds_top top"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>公告</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/onlyIndex.css">-->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+</head>
+<body>
+
+<div id="nav" class="w-100 fixed-top">
+    <nav class="w-100 navbar navbar-expand-md navbar-dark container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/nav_logo_white.svg" />
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="border-0 navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!--<span class="navbar-toggler-icon "></span>-->
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul style="z-index: 9999" class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="notice.html">公告</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">产品列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="method.html">解决方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="partner.html">合作伙伴</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">联系我们</a>
+                </li>
+                <div class="hide-xs">
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="login.html">登陆</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="sign_up.html">注册</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <ul style="font-size: 20px" class="float-right text-light m-0 p-0 show-xs">
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='login.html'" class="btn btn-success btn-sm">
+                    登入
+                </button>
+            </li>
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='sign_up.html'" class="btn btn-success btn-sm">
+                    注册
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="banner" class="h-banner banner0 overlay position-relative text-white">
+    <div class="h-banner w-100 position-absolute d-flex text-light justify-content-center align-items-center">
+        <div class="container">
+            <div class="text-center p-3 pl-lg-5 pr-lg-5">
+                <h2>公告信息</h2>
+            </div>
+            <div class="text-center pl-2 pr-2 pl-lg-5 pr-lg-5">
+                <p>
+                    DawnCloud 虚拟主机为您提供安全可靠、秒级响应、弹性伸缩的计算资源。支持多种计费模式，助您实现灵活、高效的 IT 基础架构，显著降低您的 IT 成本，简化运维工作。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pt-4 pb-5">
+    <div class="row">
+        <div class="container d-none d-md-block col-12 col-xs-3 col-md-3 col-lg-3 col-xl-3">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link h5 text-muted" data-toggle="collapse" href="#collapseOne">
+                        月份
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show">
+                    <ul class="list-group text-muted">
+                        <li class="list-group-item">Jun 2019</li>
+                        <li class="list-group-item">May 2019</li>
+                        <li class="list-group-item">Apl 2019</li>
+                        <li class="list-group-item">Mar 2019</li>
+                        <li class="list-group-item">Feb 2019</li>
+                        <li class="list-group-item">Jan 2019</li>
+                        <li class="list-group-item">Dec 2018</li>
+                        <li class="list-group-item">Nov 2018</li>
+                        <li class="list-group-item">Oct 2018</li>
+                        <li class="list-group-item">Sep 2018</li>
+                        <li class="list-group-item">Aug 2018</li>
+                        <li class="list-group-item">Jul 2018</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link h5 text-muted" data-toggle="collapse" href="#collapseTwo">
+                        技术支持
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse show">
+                    <ul class="list-group text-muted">
+                        <li class="list-group-item">我的工单</li>
+                        <li class="list-group-item">公告信息</li>
+                        <li class="list-group-item">帮助中心</li>
+                        <li class="list-group-item">资源下载</li>
+                        <li class="list-group-item">服务监控</li>
+                        <li class="list-group-item">提交工单</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container col-12 col-xs-9 col-md-9 col-lg-9 col-xl-9">
+            <div class="mt-3 mb-3 pb-3">
+                <div class="text-muted pl-3">
+                    <h4>最新公告</h4>
+                    <p class="pt-2 pb-2">所有公告，来自 ROUTINE MONKEY</p>
+                </div>
+                <p class="pl-3">
+                    <a class="text-muted" href="#">首页</a>&nbsp;/&nbsp;
+                    <a class="text-muted"><b>公告</b></a>
+                </p>
+            </div>
+            <div class="card mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已完成】洛杉矶B区机柜维护操作</b></h5>
+                <p class="text-muted">亲爱的用户你好，接紧急通知，
+                    因上游提供商业务调整，我们需迁移机柜。硬件迁移
+                    期间，您所在的宿主机会关机，虚拟机暂不可用。 维
+                    护地点: 洛杉矶数据中心B区 开始维护日期/时间:
+                    2019年03月08日（星期五）17:00PM 维护类型:硬件
+                    维护 受影响的服务: ...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已完成】香港B区电力维护操作</b></h5>
+                <p class="text-muted">亲爱的用户你好，电力公司对区域电力调整升级。
+                    维护期间，您所在的宿主机会关机，虚拟机暂不可用。 维护地点: 香
+                    港数据中心B区 开始维护日期/时间: 2019年03月03日（星期日）10:00AM
+                    维护类型:电力维护 受影响的服务: 所有虚拟机 预期影响: ...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已恢复】关于香港A区HKBN网络故障及补偿方案</b></h5>
+                <p class="text-muted">亲爱的用户您好，因上游运营商HKBN(香港宽频)
+                    及其它原因造成的数小时的服务中断，我们深感抱歉。虽然已经完全
+                    恢复服务，但目前我们未得到任何来自HKBN的网络故障报告及补偿方案
+                    。但作为服务商我们有必要对自己的客户进行补偿，我司决定对所有香
+                    港A区用户补...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已解决】香港A-HKBN-12号宿主机内存故障</b></h5>
+                <p class="text-muted">亲爱的用户你好，2018.6.16 01:05 Update ：
+                    所有受影响的用户双倍补偿2天使用期，补偿已经发放到账。
+                    2018.6.15 21:30 Update ...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【非常重要】韩国区即将下线通知</b></h5>
+                <p class="text-muted">亲爱的用户您好，首先很感谢您选择了我们韩国区
+                    产品，相信我们的服务。但是现在很不幸的告诉您，我们的韩国区上游
+                    提供商Gcore前几日将路由回程切至NTT，取消KT直连。该提供商没有
+                    对我们进行任何通知，并且已经不是第一次随意切换线路，作为提
+                    供商表现的毫...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已恢复】韩国区网络故障</b></h5>
+                <p class="text-muted">亲爱的用户你好，
+                    我们监测到韩国区网络异常，出现延迟增高大量丢包的情况，
+                    我们正在联系上游NOC检查中。
+                    故障地点: 韩国机房A区
+                    我们会尽快恢复网络。
+                    造成不便，还请谅解。
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已完成】香港可用区路由设备维护工作</b></h5>
+                <p class="text-muted">亲爱的用户你好， 我们计划对香港机
+                    房路由设备进行固件升级工作。维护期间，会出现短暂的
+                    断网情况，网络暂不可用。 维护地点: 香港机房A区 开始
+                    维护日期/时间: 2018年4月24日（星期二）23:00PM 维护
+                    类型:基础设备维护 受影响的服务: 网内所有设备预期影响: ...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="card  mt-3 mb-3 p-3">
+                <h5 class="text-colorAccent pt-2 pb-2"><b>【已完成】官网服务器停机维护公告</b></h5>
+                <p class="text-muted">我们将定于4月6日凌晨00:30AM起进行
+                    官网服务器停机维护，请提前完成所需操作，对此造成不便，
+                    还请谅解。影响范围：仅影响官网访问，维护不会影响独
+                    立控制面板，不影响虚拟主机运行...
+                    <a class="text-muted" href="#">查看更多 >></a>
+                </p>
+                <p class="text-muted">9th&nbsp;Mar&nbsp;2018</p>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <ul class="pagination pagination">
+                    <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer mt-4 text-light d-flex align-items-center">
+    <div class="foottop container text-center small">
+        <div class="text-center ">
+            <div class="text-center float-left pt-3 pl-3">
+                <a href="index.html" class="logo1 m-auto">
+                </a>
+            </div>
+            <div class="float-right pb-3 pr-3">
+                <dl>
+                    <dt>400-2333-666</dt>
+                    <dd>工作时间：周一至周五(9:00~18:00)</dd>
+                    <dd>电子邮箱：dawncloud@dawncloud.com</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="foot_copyright pt-3 pb-3">
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light">版权所有 © DawnCloud 2019</a>
+                <a class="text-anti-light" href="index.html">DawnCloud计算机服务商</a>
+                <a class="text-anti-light" href="http://www.miitbeian.gov.cn/">京ICP备23336666号</a>
+            </div>
+            <br>
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light" href="#">公司介绍</a>
+                <a class="text-anti-light" href="contact.html">联系方式</a>
+                <a class="text-anti-light" href="#">人才招聘</a>
+                <a class="text-anti-light" href="#">百度百科</a>
+                <a class="text-anti-light" href="#">百度口碑</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回到顶部-->
+<div style="z-index: 9999;" class="barside d-block">
+    <a onclick="scrollToTop()" title="回到顶部" class="bds_top top" ></a>
+</div>
+</body>
+</html>

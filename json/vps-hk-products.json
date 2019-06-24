@@ -1,0 +1,72 @@
+{
+  "title": "HK|香港A区 SSD KVM",
+  "info": "【建站首选 香港原生IP CN2接入】纯SSD阵列，大陆直连，速度&延迟保证，禁止消耗带宽的应用。",
+  "datas": [
+    {
+      "name": "香港BGP - 1G",
+      "cpu": "E5-2670 * 2 vCore",
+      "memory": "1024M",
+      "swap": "512M",
+      "ssd": "15G",
+      "flow": "400G",
+      "bandwidth": "50Mbps",
+      "ip": "IPv4 * 1 / IPv6 * 25",
+      "price_cny": "69.00"
+    },
+    {
+      "name": "香港BGP - 2G",
+      "cpu": "E5-2670 * 2 vCore",
+      "memory": "2048M",
+      "swap": "512M",
+      "ssd": "30G",
+      "flow": "800G",
+      "bandwidth": "100Mbps",
+      "ip": "IPv4 * 1 / IPv6 * 30",
+      "price_cny": "129.00"
+    },
+    {
+      "name": "香港BGP - 4G",
+      "cpu": "E5-2670 * 4 vCore",
+      "memory": "4096M",
+      "swap": "512M",
+      "ssd": "60G",
+      "flow": "1500G",
+      "bandwidth": "100Mbps",
+      "ip": "IPv4 * 1 / IPv6 * 35",
+      "price_cny": "239.00"
+    },
+    {
+      "name": "香港BGP - 8G",
+      "cpu": "E5-2670 * 4 vCore",
+      "memory": "8192M",
+      "swap": "512M",
+      "ssd": "80G",
+      "flow": "2000G",
+      "bandwidth": "200Mbps",
+      "ip": "IPv4 * 1 / IPv6 * 40",
+      "price_cny": "450.00"
+    },
+    {
+      "name": "香港BGP - VDS - 16G",
+      "cpu": "E5-2670 * 8 vCore",
+      "memory": "16384M",
+      "swap": "512M",
+      "ssd": "160G",
+      "flow": "2500G",
+      "bandwidth": "300Mbps",
+      "ip": "IPv4 * 1 / IPv6 * 45",
+      "price_cny": "950.00"
+    },
+    {
+      "name": "香港BGP - VDS - 32G",
+      "cpu": "E5-2670 * 16 vCore",
+      "memory": "32768M",
+      "swap": "512M",
+      "ssd": "320G",
+      "flow": "3000G",
+      "bandwidth": "300Mbps",
+      "ip": "IPv4 * 1 / IPv6 * 50",
+      "price_cny": "1850.00"
+    }
+  ]
+}

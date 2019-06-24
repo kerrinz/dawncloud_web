@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>合作伙伴</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/onlyIndex.css">-->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <style type="text/css">
+        .container-fluid-s {
+            text-align: center !important;
+        }
+        .jumbotron-fluid {
+            color: #FFFFFF;
+        }
+        .is-20x20 {
+            width: auto;
+            height: 20px;
+        }
+        .container-bg {
+            background: #FFFFFF;
+        }
+        .is-64x64 {
+            width: 64px;
+            height: 64px;
+            margin-right: 1rem;
+        }
+        .card-sz {
+            width: auto;
+            height: 202px;
+        }
+        .card-body-sz {
+            width: auto;
+            height: 122px;
+        }
+        .scenario-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #00A971;
+            line-height: 24px;
+        }
+        .card-body-bg {
+            background: #efefef;
+            width: auto;
+            height: 688px;
+        }
+        .scenario-content ul > li::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            left: 83px;
+            top: 348px;
+            border-radius: 50%;
+            background: #00A971;
+        }
+        .steps-colum{
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+        }
+        .steps{
+            background: #f5f9fa;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="nav" class="w-100 fixed-top">
+    <nav class="w-100 navbar navbar-expand-md navbar-dark container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/nav_logo_white.svg" />
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="border-0 navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!--<span class="navbar-toggler-icon "></span>-->
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul style="z-index: 9999" class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notice.html">公告</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">产品列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="method.html">解决方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="partner.html">合作伙伴</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">联系我们</a>
+                </li>
+                <div class="hide-xs">
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="login.html">登陆</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a class="nav-link" href="sign_up.html">注册</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <ul style="font-size: 20px" class="float-right text-light m-0 p-0 show-xs">
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='login.html'" class="btn btn-success btn-sm">
+                    登入
+                </button>
+            </li>
+            <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                <button onclick="window.location.href='sign_up.html'" class="btn btn-success btn-sm">
+                    注册
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="banner" class="h-banner overlay position-relative text-white">
+    <div class="h-banner w-100 banner1 position-absolute d-flex text-light justify-content-center align-items-center">
+        <div class="container">
+            <div class="text-center p-3 pl-lg-5 pr-lg-5">
+                <h2>DawnCloud Partner Network</h2>
+            </div>
+            <div class="text-center pl-2 pr-2 pl-lg-5 pr-lg-5">
+                <p>
+                    DawnCloud Partner Network (DPN) 是DawnCloud 推出的全球性的合作伙伴计划。 通过提供销售、技术、市场、创业扶持等多方位的支持，助力合作伙伴成功构建基于 DawnCloud 的业务， 实现产品、业务与服务能力的创新与升级。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid container-bg container-fluid-s">
+    <div class="container pt-5 pb-5">
+        <div class="title-block">
+            <h3>如何加入DawnCloud Partner Network？</h3>
+        </div>
+        <div class="text-center pt-5 d-flex justify-content-center">
+            <div class="row steps-colum col-8 col-sm-12 col-md-8">
+                <div class="steps col-lg-2 col-md-3 col-sm-3">
+                    <img class="is-20x20" src="img/login.svg"/>
+                    <span>注册账号</span>
+                </div>
+                <div class="steps col-lg-2 col-md-3 col-sm-3">
+                    <img class="is-20x20" src="img/edit-1.svg"/>
+                    <span>签署协议</span>
+                </div>
+                <div class="steps col-lg-2 col-md-3 col-sm-3">
+                    <img class="is-20x20" src="img/icon-app-1.svg"/>
+                    <span>提交申请信息</span>
+                </div>
+                <div class="steps col-lg-2 col-md-3 col-sm-3">
+                    <img class="is-20x20" src="img/2.svg"/>
+                    <span>资质审核</span>
+                </div>
+                <div class="steps col-lg-2 col-md-3 col-sm-3">
+                    <img class="is-20x20" src="img/users-2.svg"/>
+                    <span>成为合作伙伴</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container container-fluid-s">
+        <div class="title-block pt-5">
+            <h3>合作類型</h3>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row pt-5 justify-content-center">
+            <div class="card col-lg-8  card-sz">
+                <div class="card-body card-body-sz">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/icon-2-1-1.svg"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>解决方案提供商/ Reseller&SI</h6>
+                            <p>具备在特定区域或行业内，结合自身的销售渠道和技术能力，通过设计、规划和部署完善的云平台解决方案实现DawnCloud 产品的销售和推广。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-8 mt-3  card-sz">
+                <div class="card-body  card-body-sz">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/icon-4.svg"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6>技术服务提供商/ Service</h6>
+                            <p>具备DawnCloud 云产品的咨询、交付、迁移、运维、网络安全等云上服务的能力。    </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-8 mt-3  card-sz">
+                <div class="card-body card-body-sz">
+                    <div class="media pt-3">
+                        <div class="media-left">
+                            <fieldset class="is-64x64">
+                                <img src="img/icon-1-1.svg"/>
+                            </fieldset>
+                        </div>
+                        <div class="media-content">
+                            <h6 class="media-left">独立软件开发商/ ISV</h6>
+                            <p>具备通过集成DawnCloud 云产品，为企业级客户提供基于云的联合解决方案的能力。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid container-bg ">
+    <div class="container pt-5 pb-5">
+        <div class="title-block container-fluid-s">
+            <h3>奖励计划</h3>
+            <p>加入X Partner 计划，共享快速成长的云生态收益</p>
+        </div>
+        <div class="row pt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5 ">
+                <div class="card-body card-body-bg ">
+                    <div class="ico container-fluid-s">
+                        <img src="img/cloud@2x.png"/>
+                    </div>
+                    <div class="title container-fluid-s">
+                        公有云代理商奖励计划
+                    </div>
+                    <div class="content container-fluid-s">
+                        向客户推荐 DawnCloud 公有云服务，赢得返点奖励
+                    </div>
+                    <div class="scenario-title pt-5 ">
+                        申请条件
+                    </div>
+                    <div class="scenario-content">
+                        <ul>
+                            <li class="pt-3">加入 X Partner 合作伙伴计划，并完成相关协议签署</li>
+                            <li class="pt-3">完成线上代理商系统的注册认证，成为银牌代理商</li>
+                            <li class="pt-3">推荐客户消费 DawnCloud 公有云资源</li>
+                        </ul>
+                    </div>
+                    <div class="link pt-5">
+                        <a href="#" style="color: #00A971;">
+                            进入代理商系统 →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5">
+                <div class="card-body card-body-bg pt-5">
+                    <div class="ico container-fluid-s">
+                        <img src="img/qualify-2.svg"/>
+                    </div>
+                    <div class="title container-fluid-s pt-5">
+                        私有云产品销售奖励计划
+                    </div>
+                    <div class="content container-fluid-s">
+                        向客户销售私有云产品，赢得返点奖励
+                    </div>
+                    <div class="scenario-title pt-5 ">
+                        申请条件
+                    </div>
+                    <div class="scenario-content">
+                        <ul>
+                            <li class="pt-3">加入 X Partner 合作伙伴计划，并完成相关协议签署</li>
+                            <li class="pt-3">完成线上代理商系统的注册认证，成为银牌代理商</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid container-bg  container-fluid-s">
+    <div class="container pt-5 pb-5">
+        <div class="tetle">
+            <h2>立即加入 DawnCloud Partner Network 计划</h2>
+        </div>
+        <div class="btn pt-3">
+            <div class="btn btn-success">
+                申请加入DPN
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer mt-4 text-light d-flex align-items-center">
+    <div class="foottop container text-center small">
+        <div class="text-center ">
+            <div class="text-center float-left pt-3 pl-3">
+                <a href="index.html" class="logo1 m-auto">
+                </a>
+            </div>
+            <div class="float-right pb-3 pr-3">
+                <dl>
+                    <dt>400-2333-666</dt>
+                    <dd>工作时间：周一至周五(9:00~18:00)</dd>
+                    <dd>电子邮箱：dawncloud@dawncloud.com</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="foot_copyright pt-3 pb-3">
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light">版权所有 © DawnCloud 2019</a>
+                <a class="text-anti-light" href="index.html">DawnCloud计算机服务商</a>
+                <a class="text-anti-light" href="http://www.miitbeian.gov.cn/">京ICP备23336666号</a>
+            </div>
+            <br>
+            <div class="text-center d-inline-block">
+                <a class="text-anti-light" href="#">公司介绍</a>
+                <a class="text-anti-light" href="contact.html">联系方式</a>
+                <a class="text-anti-light" href="#">人才招聘</a>
+                <a class="text-anti-light" href="#">百度百科</a>
+                <a class="text-anti-light" href="#">百度口碑</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回到顶部-->
+<div style="z-index: 9999;" class="barside d-block">
+    <a onclick="scrollToTop()" title="回到顶部" class="bds_top top" ></a>
+</div>
+</body>
+
+</html>

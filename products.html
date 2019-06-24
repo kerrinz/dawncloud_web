@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>VPS产品列表</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/onlyIndex.css">-->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/waves.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <style type="text/css">
+        .info p {
+            color: #afafaf;
+        }
+        .text-hight {
+            color: #778e9b;
+            /*font-weight: 400;*/
+        }
+    </style>
+</head>
+<body>
+    <div id="nav" class="w-100 fixed-top">
+        <nav class="w-100 navbar navbar-expand-md navbar-dark container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/nav_logo_white.svg" />
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="border-0 navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <!--<span class="navbar-toggler-icon "></span>-->
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul style="z-index: 9999" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notice.html">公告</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="products.html">产品列表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="method.html">解决方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partner.html">合作伙伴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                    <div class="hide-xs">
+                        <li class="nav-item w-100">
+                            <a class="nav-link" href="login.html">登陆</a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a class="nav-link" href="sign_up.html">注册</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <ul style="font-size: 20px" class="float-right text-light m-0 p-0 show-xs">
+                <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                    <button onclick="window.location.href='login.html'" class="btn btn-success btn-sm">
+                        登入
+                    </button>
+                </li>
+                <li class="float-left pl-1 pl-lg-2 pr-1 pr-lg-2">
+                    <button onclick="window.location.href='sign_up.html'" class="btn btn-success btn-sm">
+                        注册
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="banner" class="h-banner banner0 overlay position-relative text-white">
+        <div class="h-banner w-100 position-absolute d-flex text-light justify-content-center align-items-center">
+            <div class="container">
+                <div class="text-center p-3 pl-lg-5 pr-lg-5">
+                    <h2>VPS产品</h2>
+                </div>
+                <div class="text-center pl-2 pr-2 pl-lg-5 pr-lg-5">
+                    <p>
+                        DawnCloud 虚拟主机为您提供安全可靠、秒级响应、弹性伸缩的计算资源。支持多种计费模式，助您实现灵活、高效的 IT 基础架构，显著降低您的 IT 成本，简化运维工作。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-3 pr-0">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 fold" id="accordion">
+                <div class="fold-panel">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#">
+                            <i class="fa fa-shopping-cart pr-2"></i>VPS
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show">
+                        <ul class="">
+                            <li class="vps">
+                                HK|香港A区 SSD KVM
+                            </li>
+                            <li class="vps">
+                                SGP|新加坡 VZ-Mini V5
+                            </li>
+                            <!--<li class="vps">-->
+                                <!--USA|洛杉矶B区 SSD KVM-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="fold-panel">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#">
+                            操作
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse show">
+                        <div class="">
+                            <ul class="">
+                                <li onclick="window.location.href='shopping.html'">
+                                    查看购物车
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fold-panel">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#">
+                            选择货币
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse show">
+                        <div class="">
+                            <ul class="">
+                                <li>
+                                    CNY
+                                </li>
+                                <li>
+                                    USD
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div id="products" class="col-12 col-md-8 col-lg-9 row justify-content-center justify-content-md-start">
+                <div class="mt-2 pb-4 w-100 ">
+                    <p id="vps_title" class="large pl-3 pr-3 pt-3 h3"> </p>
+                    <p id="vps_info" class="medium pl-3 pr-3 pt-2 text-secondary"> </p>
+                </div>
+                <div class="select container pb-2">
+                    <select style="font-size: 16px" class="text-colorAccent form-control w-auto float-left">
+                        <option>HK|香港A区 SSD KVM</option>
+                        <option>HK|香港B区 NAT VZ-Mini V5</option>
+                        <option>SGP|新加坡 VZ-Mini V5</option>
+                    </select>
+                    <select style="font-size: 16px" class="text-colorAccent form-control w-auto float-right">
+                        <option>选择货币</option>
+                        <option>CNY</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+                <div v-for="item in datas" class="col-12 col-lg-6 mb-2 mt-1">
+                    <div class="card card-hover d-inline-block w-100 pb-3">
+                        <div class="large text-dark bg-light p-3 pl-4">
+                            {{item.name}}
+                        </div>
+                        <div class="info pl-3 pr-3 pb-3 mt-2">
+                            <div class="float-left medium text-secondary">
+                                <p>
+                                    <span class="text-hight">{{item.cpu}}</span>
+                                </p>
+                                <p>
+                                    内存
+                                    <span class="text-hight">{{item.memory}}</span>
+                                </p>
+                                <p>
+                                    SWAP
+                                    <span class="text-hight">{{item.swap}}</span>
+                                </p>
+                                <p>
+                                    SSD
+                                    <span class="text-hight">{{item.ssd}}</span>
+                                </p>
+                                <p>
+                                    流量
+                                    <span class="text-hight">{{item.flow}}</span>
+                                </p>
+                                <p>
+                                    带宽
+                                    <span class="text-hight">{{item.bandwidth}}</span>
+                                </p>
+                                <p>
+                                    <span class="text-hight">{{item.ip}}</span>
+                                </p>
+                            </div>
+                            <div class="float-right text-center pr-2 pr-sm-0 pt-2">
+                                <P class="text-danger medium">￥{{item.price_cny}} CNY</P>
+                                <P class="small">月付 </P>
+                                <button onclick="window.location.href='shopping.html'" class="buy btn radio-px  btn-outline-success btn-sm mt-2">立即选购</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="footer mt-4 text-light d-flex align-items-center">
+        <div class="foottop container text-center small">
+            <div class="text-center ">
+                <div class="text-center float-left pt-3 pl-3">
+                    <a href="index.html" class="logo1 m-auto">
+                    </a>
+                </div>
+                <div class="float-right pb-3 pr-3">
+                    <dl>
+                        <dt>400-2333-666</dt>
+                        <dd>工作时间：周一至周五(9:00~18:00)</dd>
+                        <dd>电子邮箱：dawncloud@dawncloud.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="foot_copyright pt-3 pb-3">
+                <div class="text-center d-inline-block">
+                    <a class="text-anti-light">版权所有 © DawnCloud 2019</a>
+                    <a class="text-anti-light" href="index.html">DawnCloud计算机服务商</a>
+                    <a class="text-anti-light" href="http://www.miitbeian.gov.cn/">京ICP备23336666号</a>
+                </div>
+                <br>
+                <div class="text-center d-inline-block">
+                    <a class="text-anti-light" href="#">公司介绍</a>
+                    <a class="text-anti-light" href="contact.html">联系方式</a>
+                    <a class="text-anti-light" href="#">人才招聘</a>
+                    <a class="text-anti-light" href="#">百度百科</a>
+                    <a class="text-anti-light" href="#">百度口碑</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--回到顶部-->
+    <div style="z-index: 9999;" class="barside d-block">
+        <a onclick="scrollToTop()" title="回到顶部" class="bds_top top" ></a>
+    </div>
+</body>
+</html>
+<script>
+    jQuery(document).ready(function ($) {
+        vpsVue = new Vue({
+            el:'#products',
+            data: {
+                datas:{}
+            },
+        });
+        $.ajax({
+            url: "json/vps-hk-products.json",
+            async:false,    //异步
+            beforeSend:function() {
+                //
+            },
+            success: function (data) {
+                // var jsonArr = jQuery.parseJSON(data);
+                //设置数据
+                $("#vps_title").html(data.title);
+                $("#vps_info").html(data.info);
+                vpsVue.$data.datas = data.datas;
+            },
+            error:function (msg) {
+                //
+            },
+            complete:function () {
+            }
+        });
+
+        vps = document.querySelectorAll(".vps");
+        [].forEach.call(vps, function (item, index) {
+            item.addEventListener("click", function(e){
+                switch (index) {
+                    case 0:
+                        var url = "json/vps-hk-products.json";
+                        break;
+                    case 1:
+                        var url = "json/vps-sgp-products.json";
+                        break;
+                }
+                $.ajax({
+                    url: url,
+                    async:false,    //异步
+                    beforeSend:function() {
+                        //
+                    },
+                    success: function (data) {
+                        // var jsonArr = jQuery.parseJSON(data);
+                        //设置数据
+                        $("#vps_title").html(data.title);
+                        $("#vps_info").html(data.info);
+                        vpsVue.$data.datas = data.datas;
+                    },
+                    error:function (msg) {
+                        //
+                    },
+                    complete:function () {
+                    }
+                });
+            });
+        });
+    });
+</script>

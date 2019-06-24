@@ -1,0 +1,40 @@
+{
+  "title": "SGP|新加坡 VZ-Mini V5",
+  "info": "大陆直连，PCCW+电信CN2加持，自带锐速+TCP底层优化",
+  "datas": [
+    {
+      "name": "新加坡BGP - 1024M",
+      "cpu": "E5-2420 * 1 vCore",
+      "memory": "1024M",
+      "swap": "2048M",
+      "ssd": "15G",
+      "flow": "800G",
+      "bandwidth": "100Mbps",
+      "ip": "IPv4 * 1",
+      "price_cny": "44.99"
+    },
+    {
+      "name": "新加坡BGP - 2048M",
+      "cpu": "E5-2420 * 2 vCore",
+      "memory": "2048M",
+      "swap": "6144M",
+      "ssd": "30G",
+      "flow": "1500G",
+      "bandwidth": "100Mbps",
+      "ip": "IPv4 * 1",
+      "price_cny": "89.99"
+    },
+    {
+      "name": "新加坡BGP - 4096M",
+      "cpu": "E5-2420 * 2 vCore",
+      "memory": "4096M",
+      "swap": "8192M",
+      "ssd": "60G",
+      "flow": "3000G",
+      "bandwidth": "200Mbps",
+      "ip": "IPv4 * 1",
+      "price_cny": "199.99"
+    }
+  ]
+}
+
